@@ -4,13 +4,13 @@ exports.handler = async (event) => {
 
     let ilinAdi=iller[plaka];
 
-    const content = {
+    const sonucVerisi = {
         plaka : plaka,
         il : ilinAdi
     }
     const response = {
         statusCode: 200,
-        body:  JSON.stringify(content),
+        body:  JSON.stringify(sonucVerisi),
     };
     return response;
 };
