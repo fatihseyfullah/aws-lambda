@@ -6,7 +6,7 @@ exports.handler = async (event) => {
 
     const sonucVerisi = {
         plaka : plaka,
-        il : ilinAdi
+        il : ilinAdi ? ilinAdi : "Bulunamadi"
     }
     const response = {
         statusCode: 200,
